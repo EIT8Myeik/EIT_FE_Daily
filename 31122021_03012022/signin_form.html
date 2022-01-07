@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EIT Program - Sign In</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: "Roboto", sans-serif;
+      }
+
+      body {
+        background-image: linear-gradient(to right, #166cb6 50%, white 50%);
+      }
+
+      .container {
+        display: flex;
+        height: 100%;
+        width: 100%;
+        align-items: center;
+        padding: 0 15%;
+        gap: 2rem;
+      }
+      .welcome-text {
+        width: 40%;
+      }
+      .welcome-text > h2 {
+        margin-bottom: 5rem;
+        color: white;
+        text-align: center;
+      }
+      .welcome-text > h2 span {
+        color: #55d4e4;
+        font-size: 1.2rem;
+      }
+
+      .welcome-text > p {
+        color: white;
+        text-align: center;
+        line-height: 1.7rem;
+        font-size: 1.1rem;
+      }
+
+      .signin-form {
+        width: 50%;
+      }
+
+      .signin-form > div {
+        background-color: white;
+        border: 0.5px solid #dbdbdb;
+        display: flex;
+        flex-direction: column;
+        padding: 1.2rem 2rem;
+        width: 90%;
+        border-radius: 0.31rem;
+      }
+
+      .signin-form .logo {
+        text-align: center;
+        margin-bottom: 2.5rem;
+        margin-top: 2rem;
+      }
+
+      .eit-form-name,
+      .eit-form-password {
+        display: flex;
+        flex-direction: column;
+      }
+
+      .eit-form-name #name,
+      .eit-form-password #password {
+        height: 2.2rem;
+      }
+
+      .eit-form-name {
+        margin-bottom: 2rem;
+      }
+      .eit-form-name label,
+      .eit-form-password label {
+        margin-bottom: 0.2rem;
+      }
+
+      .eit-form-password {
+        margin-bottom: 2rem;
+      }
+
+      .btn-singin {
+        margin: 0 auto;
+        padding: 0.5rem 2rem;
+        display: block;
+        background-color: #166cb6;
+        color: white;
+        border: none;
+        border-radius: 0.18rem;
+        transition: all 0.5s ease;
+        cursor: pointer;
+        font-size: 1.053rem;
+      }
+      .btn-singin:hover {
+        background-color: #0d4a80;
+      }
+
+      input:focus {
+        outline: none;
+        box-shadow: 0px 0px 5px #166cb6;
+      }
+      input {
+        border: 0.5px solid #bfbfbf;
+        border-radius: 5px;
+        padding: 10px;
+      }
+
+      @media (max-width: 930px) {
+        .container {
+          padding: 0 10%;
+        }
+      }
+
+      @media (max-width: 700px) {
+        .container {
+          padding: 0 5%;
+        }
+      }
+
+      @media (min-width: 535px) {
+        html,
+        body {
+          height: 100%;
+        }
+      }
+      @media (max-width: 535px) {
+        .container {
+          gap: 5rem;
+          flex-direction: column;
+          padding: 10% 5%;
+        }
+
+        body {
+          background-image: linear-gradient(to bottom, #166cb6 50%, white 50%);
+        }
+
+        .welcome-text {
+          width: 90%;
+        }
+        .signin-form {
+          width: 100%;
+        }
+
+        .signin-form > div {
+          width: 100%;
+        }
+
+        .welcome-text > h2 {
+          margin-bottom: 2rem;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="welcome-text">
+        <h2>Welcome To<span> EIT Program</span></h2>
+        <p>
+          PDP ( Professional Development Program ) is one of programs offered by
+          EIT (English & IT, pronounced "eight") for educational opportunities
+          to the youth in developing countries.
+        </p>
+      </div>
+      <div class="signin-form">
+        <div>
+          <div class="logo">
+            <img
+              src="http://pdp.8eit.org/images/EIT_Logo_64x64_45.ico"
+              alt="eit-logo"
+              width="50"
+              height="50"
+            />
+          </div>
+          <form class="eit-form">
+            <div class="eit-form-name">
+              <label for="name">Name</label
+              ><input type="text" name="name" id="name" />
+            </div>
+            <div class="eit-form-password">
+              <label for="password">Password</label
+              ><input type="password" name="password" id="password" />
+            </div>
+            <button type="submit" class="btn-singin">Sign In</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
